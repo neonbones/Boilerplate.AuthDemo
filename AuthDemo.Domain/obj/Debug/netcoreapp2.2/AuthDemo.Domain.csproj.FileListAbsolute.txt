@@ -1,9 +1,0 @@
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\bin\Debug\netcoreapp2.2\AuthDemo.Domain.deps.json
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\bin\Debug\netcoreapp2.2\AuthDemo.Domain.dll
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\bin\Debug\netcoreapp2.2\AuthDemo.Domain.pdb
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\obj\Debug\netcoreapp2.2\AuthDemo.Domain.csprojAssemblyReference.cache
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\obj\Debug\netcoreapp2.2\AuthDemo.Domain.csproj.CoreCompileInputs.cache
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\obj\Debug\netcoreapp2.2\AuthDemo.Domain.AssemblyInfoInputs.cache
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\obj\Debug\netcoreapp2.2\AuthDemo.Domain.AssemblyInfo.cs
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\obj\Debug\netcoreapp2.2\AuthDemo.Domain.dll
-D:\Practice\AuthDemo\AuthDemo\AuthDemo.Domain\obj\Debug\netcoreapp2.2\AuthDemo.Domain.pdb
