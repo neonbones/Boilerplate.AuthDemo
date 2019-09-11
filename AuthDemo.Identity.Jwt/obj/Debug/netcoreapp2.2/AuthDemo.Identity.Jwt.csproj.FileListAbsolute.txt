@@ -1,0 +1,14 @@
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.deps.json
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.dll
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.pdb
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Domain.dll
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Identity.dll
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Domain.pdb
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\bin\Debug\netcoreapp2.2\AuthDemo.Identity.pdb
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.csprojAssemblyReference.cache
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.csproj.CoreCompileInputs.cache
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.AssemblyInfoInputs.cache
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.AssemblyInfo.cs
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.csproj.CopyComplete
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.dll
+D:\Practice\AuthDemo\AuthDemo\AuthDemo.Identity.Jwt\obj\Debug\netcoreapp2.2\AuthDemo.Identity.Jwt.pdb
