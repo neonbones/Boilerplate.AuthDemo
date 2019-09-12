@@ -8,11 +8,13 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AuthDemo.Domain\AuthDemo.Domain.csproj" />
     <ProjectReference Include="..\AuthDemo.Identity\AuthDemo.Identity.csproj" />
+    <ProjectReference Include="..\AuthDemo.Infrastructure.Data\AuthDemo.Infrastructure.Data.csproj" />
   </ItemGroup>
 
 </Project>

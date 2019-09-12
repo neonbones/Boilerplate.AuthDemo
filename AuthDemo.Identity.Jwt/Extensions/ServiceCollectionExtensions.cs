@@ -1,9 +1,14 @@
 ﻿using System;
+using AuthDemo.Domain.Entities.Identity;
 using AuthDemo.Identity.Jwt.Interfaces;
 using AuthDemo.Identity.Jwt.Services;
+using AuthDemo.Infrastructure.Data.Contexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using static AuthDemo.Identity.Contracts;
 
 namespace AuthDemo.Identity.Jwt.Extensions
 {
@@ -11,7 +16,8 @@ namespace AuthDemo.Identity.Jwt.Extensions
     {
         public static IServiceCollection AddApiJwtAuthentication(
             this IServiceCollection services,
-            JwtOptions tokenOptions)
+            JwtOptions tokenOptions,
+            IHostingEnvironment environment)
         {
             if (tokenOptions == null)
                 throw new ArgumentNullException(
@@ -20,6 +26,20 @@ namespace AuthDemo.Identity.Jwt.Extensions
 
             services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>(serviceProvider =>
                 new JwtTokenGenerator(tokenOptions));
+
+            services.AddIdentity<User, Role>(opt =>
+                {
+                    opt.Password.RequiredLength = 10;
+                    opt.Password.RequireDigit = true;
+                    opt.Password.RequireLowercase = true;
+                    opt.Password.RequireUppercase = true;
+                    opt.Password.RequireNonAlphanumeric = true;
+                    opt.Lockout.AllowedForNewUsers = true;
+                    opt.Lockout.MaxFailedAccessAttempts = 5;
+                    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(environment.IsDevelopment() ? 0 : 15);
+                })
+                .AddEntityFrameworkStores<ApplicationContext>()
+                .AddDefaultTokenProviders();
 
             services.AddAuthentication(options =>
                 {
@@ -44,6 +64,12 @@ namespace AuthDemo.Identity.Jwt.Extensions
                         ValidateLifetime = true
                     };
                 });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy(UserPolicy, policy => policy.RequireRole(nameof(Role.Types.User)));
+                options.AddPolicy(AdministratorPolicy, policy => policy.RequireRole(nameof(Role.Types.Administrator)));
+            });
 
             return services;
         }
