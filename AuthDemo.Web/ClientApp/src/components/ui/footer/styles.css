@@ -1,0 +1,12 @@
+.page-footer{
+    border-top: 1px solid #e0e0e0;
+    background: linear-gradient(45deg, #8e24aa, #ff6e40) !important;
+    box-shadow: 0 6px 35px 0 rgba(255, 110, 64, 1) !important;
+    height: 64px;
+    padding: 22px;
+}
+.footer-content{
+    float: right;
+    color: rgba(255, 255, 255, .8);
+    font-size: 16px;
+}

@@ -56,6 +56,7 @@ namespace AuthDemo.Web
                 .AddEntityFrameworkStores<ApplicationContext>()
                 .AddDefaultTokenProviders();
 
+            services.Configure<SeedOptions>(Configuration.GetSection("Seed"));
             var auth = Configuration.GetSection("AuthOptions");
             services.Configure<AuthOptions>(auth);
             var authOptions = auth.Get<AuthOptions>();
@@ -104,7 +105,7 @@ namespace AuthDemo.Web
 
             app.Use(async (context, next) =>
             {
-                var token = context.Request.Cookies[".AspNetCore.Identity.Bearer"];
+                var token = context.Request.Cookies[".AspNetCore.Application.Id"];
 
                 if (!string.IsNullOrEmpty(token))
                     context.Request.Headers.Add("Authorization", "Bearer " + token);

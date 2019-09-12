@@ -1,0 +1,86 @@
+.grid-pagination{
+    box-sizing: border-box;
+    display: inline-block;
+} 
+
+.grid-scale{
+    box-sizing: border-box;
+    float: right;
+}
+
+.search-input-field{
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-right: 0px!important;
+}
+
+.table-card {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.table-card table td:first-child, .table-card table th:first-child {
+    padding: 15px 5px 15px 25px;
+}
+
+.table-card table td:last-child, .table-card table th:last-child {
+    padding: 15px 25px 15px 5px;
+}
+
+.table-card table th{
+    color:#6b6f82;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.card-title{
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 24px;
+    padding-bottom: 1% !important;
+}
+
+.no-search-result-td{
+    background: white;
+}
+
+.no-search-result-text{
+    font-size: 2rem;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 500ms ease-in;
+}
+
+.grid-loader{
+    margin: 0px;
+}
+
+.grid-loader-wrapper{
+    height: 4px;
+}
+
+.grid-sort-cursor{
+    cursor: pointer;
+}
+
+.sort-icon{
+    display: inline-flex;
+    vertical-align: top;
+}

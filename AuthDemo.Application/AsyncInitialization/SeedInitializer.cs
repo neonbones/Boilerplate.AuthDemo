@@ -15,10 +15,10 @@ namespace AuthDemo.Application.AsyncInitialization
     {
         private readonly IOptions<SeedOptions> _options;
         private readonly UserManager<User> _userManager;
-        private readonly PasswordHasher<User> _hasher;
+        private readonly IPasswordHasher<User> _hasher;
 
         public SeedInitializer(IServiceProvider serviceProvider, IOptions<SeedOptions> options,
-            UserManager<User> userManager, PasswordHasher<User> hasher)
+            UserManager<User> userManager, IPasswordHasher<User> hasher)
             : base(serviceProvider)
         {
             _hasher = hasher;

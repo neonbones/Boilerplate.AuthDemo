@@ -1,0 +1,19 @@
+.card-form {
+    overflow: hidden;
+    margin: 1rem 0 1rem 0;
+}
+
+.form-card-content {
+    border-radius: 0 0 2px 2px;
+    padding: 24px 24px 0px 24px;
+}
+
+.card-form .form-card-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0px;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 8px;
+}

@@ -1,6 +1,6 @@
 {
-  "short_name": "AuthDemo.Web",
-  "name": "AuthDemo.Web",
+  "short_name": "Client App",
+  "name": "Client App",
   "icons": [
     {
       "src": "favicon.ico",
